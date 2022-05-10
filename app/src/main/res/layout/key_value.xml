@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_centre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="18dp" />
+
+    <!--<androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_start="@dimen/grid_3_75" />-->
+
+    <TextView
+        android:id="@+id/key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_centre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  <androidx.constraintlayout.widget.Barrier
+          android:id="@+id/barrier"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          app:barrierDirection="start"
+          app:constraint_referenced_ids="value,revised_text" />-->
+
+    <!--    <androidx.constraintlayout.helper.widget.Flow-->
+    <!--        android:id="@+id/flow"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:flow_horizontalStyle="packed"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/guideline_end"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/guideline_centre"-->
+    <!--        app:constraint_referenced_ids="value,revised_text"-->
+    <!--        app:flow_maxElementsWrap="2"-->
+    <!--        app:flow_verticalBias="0"-->
+    <!--        app:flow_horizontalAlign="start"-->
+    <!--        app:flow_verticalGap="0dp"-->
+    <!--        app:flow_wrapMode="aligned" />-->
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:paddingStart="3dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_centre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
